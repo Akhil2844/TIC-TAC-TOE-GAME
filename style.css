@@ -1,0 +1,160 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color:aquamarine; */
+
+
+}
+
+nav{
+    background-color: rgb(241, 40, 40);
+    color:black;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 0 25px;
+    font-size:35px;
+}
+
+nav ul
+{
+  list-style-type:none;
+    font-family: 'Rubik', sans-serif;
+font-family: 'Varela Round', sans-serif;
+
+}
+
+nav ul li{
+    background-color: rgb(241, 40, 40);
+}
+
+.gameContainer
+{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+ 
+    /* background-color: yellow; */
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    position: relative;
+
+}
+
+.box{
+    border: 3px solid black;
+    
+    display: flex;
+    justify-content: center;
+align-items: center;
+font-size: 100px;
+cursor: pointer;
+font-family: 'Rubik', sans-serif;
+font-family: 'Varela Round', sans-serif;
+
+}
+
+.box:hover{
+    background-color: rgb(196, 166, 223);
+}
+
+.gameInfo
+{
+padding: 0 60px;
+font-family: 'Rubik', sans-serif;
+font-family: 'Varela Round', sans-serif;
+}
+
+.br-0
+{
+    border-right: none;
+}
+
+.bb-0
+{
+    border-bottom: none;
+}
+
+.bt-0
+{
+    border-top: none;
+
+}
+
+.bl-0
+{
+    border-left: none;
+}
+
+.img img{
+width: 0;
+transition: width 1s ease-in-out;
+
+}
+
+.info 
+{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+#reset{
+    margin:0 23px;
+    padding : 10px 30px; 
+    cursor: pointer;
+    border-radius: 12px;  
+    font-family: 'Rubik', sans-serif;
+font-family: 'Varela Round', sans-serif;
+font-weight: bold;   
+font-size: 25px;
+background-color: rgb(210, 200, 218);
+}
+
+.line
+{
+    height: 5px;
+    width: 0;
+    background-color: black;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+@media  screen and ( max-width: 950px)
+{
+   .gameContainer 
+   {
+  flex-wrap: wrap;
+   }
+   .gameInfo
+   {
+    margin-top: 50px;
+   }
+   .box{
+    font-size: 50px;
+   }
+   .gameInfo h1{
+    font-size: 1.8rem;
+   }
+  .container
+  {
+    display: grid;
+    grid-template-rows: repeat(3,22vw);
+    grid-template-columns: repeat(3,22vw);
+  }
+  #reset
+  {
+    margin: 15px;
+  }
+
+  .line{
+    width:50vw
+  }
+}
